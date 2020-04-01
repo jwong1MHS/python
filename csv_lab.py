@@ -41,8 +41,8 @@ print('==================================================')
 #==================================================
 # Problem 1
 #
-# You should notice that the file contains poputlation data for
-# The boroughs or NYC from 1790 - 2010. It is formatted such that
+# You should notice that the file contains population data for
+# The boroughs of NYC from 1790 - 2010. It is formatted such that
 # Each line represents one year, and contains a series of numbers
 # separated by ','. This is a common way of representing data in
 # plain text, since it is easily accessible in programming. The
@@ -59,8 +59,8 @@ def get_headers(s):
     g = []
     return g
 
-# Shold print
-# ['Year', 'Manhattan', 'Brooklyn', 'Queens', 'Bronx', 'Staten Island', 'Total']
+# Should print
+# ['Year', 'Manhattan', 'Brooklyn', 'Queens', 'Bronx', 'Staten Island']
 pop_headers = get_headers(text)
 print(pop_headers)
 

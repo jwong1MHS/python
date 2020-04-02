@@ -80,7 +80,7 @@ def get_data(s):
     return []
 
 # Should print:
-# [['1790', '33131', '4549', '6159', '1781', '3827', '49447'], ['1800', '60515', '5740', '6642', '1755', '4563', '79215'],
+# [['1790', '33131', '4549', '6159', '1781', '3827'], ['1800', '60515', '5740', '6642', '1755', '4563'],
 # There will be more sublists after that.
 pop_data = get_data(text)
 print(pop_data)
@@ -104,7 +104,7 @@ def number_convert(data):
     pass #remove this line and add your code
 
 # Should print
-# [[1790.0, 33131.0, 4549.0, 6159.0, 1781.0, 3827.0, 49447.0], [1800.0, 60515.0, 5740.0, 6642.0, 1755.0, 4563.0, 79215.0],
+# [[1790.0, 33131.0, 4549.0, 6159.0, 1781.0, 3827.0 ], [1800.0, 60515.0, 5740.0, 6642.0, 1755.0, 4563.0],
 # There will be more sublists after that.
 number_convert(pop_data)
 print (pop_data)

@@ -144,7 +144,7 @@ def row_total(row_key, data):
 print( row_total(1790, pop_data) )
 
 # How many people lived in NYC in 1880?
-
+print( row_total(1880, pop_data) )
 
 print('==================================================')
 # End Problem 4
@@ -193,15 +193,22 @@ print('==================================================')
 # should print out the answer.
 #
 #a) How many people lived in NYC in 2010?
-
+p_2010 =  row_total(2010, pop_data)
+print(p_2010)
 
 #b) How many people lived in Brooklyn in 1970?
-
+bk_pops = get_column('Brooklyn', pop_headers, pop_data)
+print( bk_pops[ years.index(1970)] )
 
 #c) What was the change in total population from 1900 to 2000?
-
-
+new = row_total(2000, pop_data)
+old = row_total(1900, pop_data)
+print( new - old )
 #d) What percentage of the total NYC population did Queens account for in 2010?
+q_pop = get_column('Queens', pop_headers, pop_data)
+q2010 = q_pop[ years.index(2010) ]
+print( q2010 / p_2010 )
+
 
 #e) Come up with your own question that can be answered using the population data.
 #   What is your question:

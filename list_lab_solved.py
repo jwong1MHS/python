@@ -109,9 +109,10 @@ print('==================================================')
 def count(n, g):
     c = 0
     i = 0
-    while i < len(g)   
+    while i < len(g):
         if g[i] == n:
             c+= 1
+        i+= 1
     return c
 
 print('Count Test')
